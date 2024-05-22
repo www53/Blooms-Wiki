@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Introduction</title>
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>    
+	/*		
+		body {
+            font-family: Winkle;
+            font-size: 36px;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: white; /* 将文本颜色修改为白色 */
+            background-image:url(image/Green%20backgroud_Chin.jpg);
+            background-size: cover;
+            overflow-x: hidden; /* 防止横向滚动条出现 */
+        }
+	*/
+		h1 {
+			margin-bottom: 20px;
+			margin-top: 100px;
+			text-align: center;
+			opacity: 0;
+			animation: fadeInUp 1s forwards;
+			color: white;
+		}
+        .h2 {
+            margin-top: 100px;
+			font-size: 40px;
+            margin-left: 40px;
+            margin-bottom: 5px; /* 减小与下方元素的距离 */
+            animation: slideInRight 1s ease-out forwards; /* 应用动画 */
+            opacity: 0; /* 设置初始透明度为0 */
+        }
+        
+        .container-wrapper {
+            padding: 5px 0; /* 上下内边距 */
+        }
+
+        .container {
+            width: 97%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; /* 垂直对齐方式 */
+            animation: slideInRight 1s ease-out forwards; /* 应用动画 */
+            opacity: 0; /* 设置初始透明度为0 */
+            margin-bottom: 50px; /* 减小内部上下间距 */
+        }
+
+        .flower-info {
+            width: 400px;
+            display: flex;
+            flex-direction: column; 
+            align-items: flex-start; /* 子元素在交叉轴上向上对齐 */
+            margin-left: 40px; /* 添加左边距 */
+            animation: slideInRight 1s ease-out 0.5s forwards; /* 应用动画，并延迟0.5秒 */
+            opacity: 0; /* 设置初始透明度为0 */
+        }
+
+        .flower-info img {
+            max-width: 250px;
+            margin-bottom: 5px;
+            border-radius: 35px; /* 圆角边框 */
+        }
+
+        .flower-info p {
+            font-size: 36px;
+            margin: 10px; 
+        }
+
+        .flower-detail {
+            margin-left: -100px;
+            flex: 1; /* 右侧自适应宽度 */
+            width: 48%;
+            background-color: #7b8066; /* 添加纯色背景 */
+            padding: 20px;
+            border-radius: 5px;
+            animation: slideInRight 1s ease-out 1s forwards; /* 应用动画，并延迟1秒 */
+            opacity: 0; /* 设置初始透明度为0 */
+        }
+
+        .flower-detail h3 {
+            font-size: 36px;
+            border-bottom: 4px solid #ffffff;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            display: inline-block; /* 添加inline-block属性 */
+            position: relative;
+        }
+   
+        .flower-detail p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* 定义动画 */
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="index.html" title="Home"><img src="image/BloomsWiki_logo_black.png" alt="logo" width="150"></a>
+			<div class="d-block d-sm-block d-lg-none" style="font-size:25px; font-color:black;">
+				<a href="index.html" title="Home"><i class="fa fa-home" style="color:black"></i></a>
+				<a href="section_flower.html" title="Flower"><i class="fa fa-sun-o" style="color:black"></i></a>
+				<a href="section_recommend_shops.html" title="Recommend"><i class="fa fa-list-alt" style="color:black"></i></a>
+				<a href="about.html" title="About Us"><i class="fa fa-info-circle" style="color:black"></i></a>
+				<a href="section_contact.html" title="Contact Us"><i class="fa fa-phone-square" style="color:black"></i></a>
+			</div>
+            <nav class="d-none d-sm-none d-lg-block">
+                <ul> 
+                    <li><a href="index.html" ><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="section_flower.html" title="Flower"><i class="fa fa-sun-o"></i> Flower</a></li>
+                    <li><a href="section_recommend_shops.html" title="Recommend"><i class="fa fa-list-alt"></i> Recommend</a></li>
+                    <li><a href="about.html" title="About Us"><i class="fa fa-info-circle"></i> About Us</a></li>
+                    <li><a href="section_contact.html" title="Contact Us"><i class="fa fa-phone-square"></i> Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+		<div class="h2">
+			<h2>Flower</h2>
+		</div>
+		<div class="container-wrapper">
+			<div class="container">
+				<div class="flower-info">
+					<img src="image/white%20hydrangea.jpg" alt="Hydrangeas">
+					<p>Hydrangeas</p>
+				</div>
+
+				<div class="flower-detail">
+					<h3>Flower Language</h3>
+					<p>Hydrangeas symbolize gratitude, grace, and beauty. They are often used to express heartfelt emotions and convey appreciation.</p>
+					<h3>Growing Season and Environment</h3>
+					<p>Hydrangeas thrive in moist, well-drained soil and prefer partial shade. They typically bloom from late spring to early autumn.</p>
+					<h3>Care Tips</h3>
+					<p>To care for hydrangeas, water them regularly, especially during dry periods, and apply a balanced fertilizer in spring.</p>
+				</div>
+			</div>
+		</div>
+        <footer>
+            <p>&copy; 2024 BLOOMS WIKI</p>
+            <p>Contact us: 123-456-7890 | email@bloomwiki.com</p>
+            <p><a href="section_contact.html">Contact</a></p>
+        </footer>
+	</div>
+</body>
+</html>

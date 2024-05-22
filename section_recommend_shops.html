@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommend Shops</title>
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @keyframes slideIn {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .title {
+            position: relative;
+			margin-top: 100px;
+			margin-bottom: 20px;
+            height: 200px; /* 固定高度以显示背景图像 */
+            background-image: url(image/beautiful-hydrangea-flower-close-up.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px; /* 圆角边框 */
+        }
+
+        .title h1 {
+            color: aliceblue;
+            font-family: Winkle;
+            font-size: 70px;
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            animation: slideIn 1s ease-out; /* 添加动画效果到文字 */
+            margin: 0; /* 确保没有默认外边距 */
+        }
+
+        .container {
+            max-width: 100%;
+            padding: 20px;
+            background-color: #7b8066;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+            background-image: url(image/Green%20backgroud_Chin.jpg);
+            background-size: cover;
+        }
+
+        .shop {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            height: 100%; /* 让每个商店占据整个 container 的高度 */
+        }
+
+        .details {
+            position: relative;
+            height: 100%;
+        }
+
+        .details img {
+            width: 100%;
+            height: 200px; /* 统一所有图片的高度 */
+            object-fit: cover; /* 保持宽高比填充容器 */
+            display: block;
+        }
+
+        .details .card {
+            position: absolute;
+            bottom: 0; /* 店名固定在图片的底部 */
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            box-sizing: border-box;
+            transform: translateY(70%); /* 初始时向下偏移 70% */
+            transition: transform 0.3s ease;
+        }
+
+        .shop:hover .details .card {
+            transform: translateY(0); /* 鼠标悬停时向上移动到可见位置 */
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 14px; /* 调整店名字体大小 */
+        }
+
+        .card p {
+            margin: 3px 0; /* 调整信息字体大小 */
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="index.html" title="Home"><img src="image/BloomsWiki_logo_black.png" alt="logo" width="150"></a>
+			<div class="d-block d-sm-block d-lg-none" style="font-size:25px; font-color:black;">
+				<a href="index.html" title="Home"><i class="fa fa-home" style="color:black"></i></a>
+				<a href="section_flower.html" title="Flower"><i class="fa fa-sun-o" style="color:black"></i></a>
+				<a href="section_recommend_shops.html" title="Recommend"><i class="fa fa-list-alt" style="color:black"></i></a>
+				<a href="about.html" title="About Us"><i class="fa fa-info-circle" style="color:black"></i></a>
+				<a href="section_contact.html" title="Contact Us"><i class="fa fa-phone-square" style="color:black"></i></a>
+			</div>
+            <nav class="d-none d-sm-none d-lg-block">
+                <ul> 
+                    <li><a href="index.html" ><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="section_flower.html" title="Flower"><i class="fa fa-sun-o"></i> Flower</a></li>
+                    <li><a href="section_recommend_shops.html" title="Recommend"><i class="fa fa-list-alt"></i> Recommend</a></li>
+                    <li><a href="about.html" title="About Us"><i class="fa fa-info-circle"></i> About Us</a></li>
+                    <li><a href="section_contact.html" title="Contact Us"><i class="fa fa-phone-square"></i> Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+		<div class="title">
+			<h1>Recommended Shops</h1>
+		</div>
+		<div class="container">
+			<div class="shop">
+				<div class="details">
+					<img src="image/flower%20shop%20(8).jpg" alt="Malaysia Floral Designs">
+					<div class="card">
+						<h2>Malaysia Floral Designs</h2>
+						<p><strong>Location:</strong> Penang</p>
+						<p><strong>Specialty:</strong> Wedding Arrangements</p>
+						<p><strong>Rating:</strong> 4.8/5</p>
+					</div>
+				</div>
+			</div>
+			<div class="shop">
+				<div class="details">
+					<img src="image/flower%20shop%20(2).jpg" alt="Malaysia Blossom Boutique">
+					<div class="card">
+						<h2>Malaysia Blossom Boutique</h2>
+						<p><strong>Location:</strong> Johor Bahru</p>
+						<p><strong>Specialty:</strong> Bouquets</p>
+						<p><strong>Rating:</strong> 4.7/5</p>
+					</div>
+				</div>
+			</div>
+			<div class="shop">
+				<div class="details">
+					<img src="image/flower%20shop%20(3).jpg" alt="Malaysia Garden Greens">
+					<div class="card">
+						<h2>Malaysia Garden Greens</h2>
+						<p><strong>Location:</strong> Melaka</p>
+						<p><strong>Specialty:</strong> Indoor Plants</p>
+						<p><strong>Rating:</strong> 4.6/5</p>
+					</div>
+				</div>
+			</div>
+			<div class="shop">
+				<div class="details">
+					<img src="image/flower%20shop%20(4).jpg" alt="Malaysia Petal Express">
+					<div class="card">
+						<h2>Malaysia Petal Express</h2>
+						<p><strong>Location:</strong> Ipoh</p>
+						<p><strong>Specialty:</strong> Flower Delivery</p>
+						<p><strong>Rating:</strong> 4.9/5</p>
+					</div>
+				</div>
+			</div>
+			<div class="shop">
+				<div class="details">
+					<img src="image/flower%20shop%20(5).jpg" alt="Malaysia Flower Haven">
+					<div class="card">
+						<h2>Malaysia Flower Haven</h2>
+						<p><strong>Location:</strong> Kota Kinabalu</p>
+						<p><strong>Specialty:</strong> Flower Arrangements</p>
+						<p><strong>Rating:</strong> 4.3/5</p>
+					</div>
+				</div>
+			</div>
+			<div class="shop">
+				<div class="details">
+					<img src="image/flower%20shop%20(6).jpg" alt="Malaysia Lily Lane">
+					<div class="card">
+						<h2>Malaysia Lily Lane</h2>
+						<p><strong>Location:</strong> Kuching</p>
+						<p><strong>Specialty:</strong> Lily Arrangements</p>
+						<p><strong>Rating:</strong> 4.2/5</p>
+					</div>
+				</div>
+			</div>
+			<div class="shop">
+				<div class="details">
+					<img src="image/flower%20shop%20(7).jpg" alt="Malaysia Orchid Oasis">
+					<div class="card">
+						<h2>Malaysia Orchid Oasis</h2>
+						<p><strong>Location:</strong> Kuala Lumpur</p>
+						<p><strong>Specialty:</strong> Orchid Arrangements</p>
+						<p><strong>Rating:</strong> 4.4/5</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+            <p>&copy; 2024 BLOOMS WIKI</p>
+            <p>Contact us: 123-456-7890 | email@bloomwiki.com</p>
+            <p><a href="section_contact.html">Contact</a></p>
+        </footer>
+	</div>
+</body>
+</html>

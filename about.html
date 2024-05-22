@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+
+		.h1-container {
+			position: relative;
+			margin-top: 100px;
+			margin-bottom: 20px;
+			height: 200px;
+			background-image: url(image/340621a69fe9f9ef4e8dc367780b7542.jpg);
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 10px; 
+		}
+		h2 {
+			margin: 0;
+			padding: 0;
+			font-size: 70px;
+			color: white;
+			text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+		}
+		.team-member {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 20px;
+			position: relative;
+		}
+
+		.image-container {
+			position: relative;
+		}
+
+		.team-member img {
+			width: 200px;
+			height: auto;
+			border-radius: 50%;
+			margin-bottom: 20px;
+			transition: transform 0.5s ease-in-out;
+		}
+
+		.member-info {
+			opacity: 0;
+			transform: translateY(-20px);
+			transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+			text-align: center;
+		}
+
+		.team-member:hover .member-info {
+			transform: translateY(0);
+			opacity: 1;
+		}
+
+		.team-member:hover img {
+			transform: scale(1.1);
+		}
+
+		.member-info h2 {
+			margin-top: 0;
+			font-size: 32px;
+			color: white;
+		}
+
+		.member-info p {
+			margin-bottom: 10px;
+			font-size: 24px;
+			color: white;
+		}
+    </style>	
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="index.html" title="Home"><img src="image/BloomsWiki_logo_black.png" alt="logo" width="150"></a>
+			<div class="d-block d-sm-block d-lg-none" style="font-size:25px; font-color:black;">
+				<a href="index.html" title="Home"><i class="fa fa-home" style="color:black"></i></a>
+				<a href="section_flower.html" title="Flower"><i class="fa fa-sun-o" style="color:black"></i></a>
+				<a href="section_recommend_shops.html" title="Recommend"><i class="fa fa-list-alt" style="color:black"></i></a>
+				<a href="about.html" title="About Us"><i class="fa fa-info-circle" style="color:black"></i></a>
+				<a href="section_contact.html" title="Contact Us"><i class="fa fa-phone-square" style="color:black"></i></a>
+			</div>
+            <nav class="d-none d-sm-none d-lg-block">
+                <ul> 
+                    <li><a href="index.html" ><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="section_flower.html" title="Flower"><i class="fa fa-sun-o"></i> Flower</a></li>
+                    <li><a href="section_recommend_shops.html" title="Recommend"><i class="fa fa-list-alt"></i> Recommend</a></li>
+                    <li><a href="about.html" title="About Us"><i class="fa fa-info-circle"></i> About Us</a></li>
+                    <li><a href="section_contact.html" title="Contact Us"><i class="fa fa-phone-square"></i> Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="h1-container">
+            <h2>About Us</h2>
+        </div>
+
+    <section class="team-member">
+        <div class="image-container">
+            <img src="image/WhatsApp%20Image%202024-05-16%20at%2020.26.28_de80b156.jpg" alt="Team Member 1">
+        </div>
+        <div class="member-info">
+            <h2>CHIN WOON XIN</h2>
+            <p>Hello, I'm Chin Woon Xin, a passionate florist and a proud member of the Blooms Wiki team. With my love for nature and artistry, I strive to create stunning floral arrangements that bring joy to people's lives.</p>
+        </div>
+    </section>
+    
+    <section class="team-member">
+        <div class="image-container">
+            <img src="image/WhatsApp%20Image%202024-05-16%20at%2020.15.49_5be181ad.jpg" alt="Team Member 2">
+        </div>
+        <div class="member-info">
+            <h2>CHEW YAN ZI</h2>
+            <p>Hi, I'm Chew Yan Zi. As a dedicated member of Blooms Wiki, I pour my heart and soul into crafting beautiful floral designs that resonate with our customers. Let's spread happiness, one bouquet at a time!</p>
+        </div>
+    </section>
+
+    <section class="team-member">
+        <div class="image-container">
+            <img src="image/WhatsApp%20Image%202024-05-16%20at%2020.28.25_46566607.jpg" alt="Team Member 3">
+        </div>
+        <div class="member-info">
+            <h2>JOANNE LOK YU QIAN</h2>
+            <p>Hey there, I'm Joanne Lok Yu Qian. With my friendly personality and dedication to customer satisfaction, I ensure that every interaction with Blooms Wiki is a delightful experience. Let's make your floral dreams come true!</p>   
+        </div>
+        <div></div>
+    </section>
+     </section>
+        <footer>
+            <p>&copy; 2024 BLOOMS WIKI</p>
+            <p>Contact us: 123-456-7890 | email@bloomwiki.com</p>
+            <p><a href="section_contact.html">Contact</a></p>
+        </footer>
+    </div>
+</body>
+</html>

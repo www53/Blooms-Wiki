@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower List</title>
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	/*
+		body {
+			font-family: Winkle;
+			color: aliceblue;
+			margin: 0;
+			padding: 0;
+			background-image: url(image/Green%20backgroud_Chin.jpg);
+			background-size: cover;
+		}
+	*/
+		h1 {
+			margin-bottom: 20px;
+			margin-top: 20px;
+			text-align: center;
+			opacity: 0;
+			animation: fadeInUp 1s forwards;
+			color: white;
+		}
+		.search-bar {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 20px;
+			text-align: center;
+			opacity: 0;
+			animation: fadeInUp 1s forwards;
+			animation-delay: 0.5s;
+		}
+		.search-bar input[type="text"] {
+			padding: 10px;
+			border: none;
+			border-radius: 20px;
+			width: 100px;
+		}
+		.flower-list {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 20px;
+		}
+		.flower-item {
+			opacity: 0;
+			animation: fadeInUp 1s forwards;
+			animation-delay: 0.8s;
+			text-align: center;
+			margin: 0 auto;
+		}
+		@keyframes fadeInUp {
+			from {
+				opacity: 0;
+				transform: translateY(20px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		.flower-item img {
+			width: 200px;
+			height: 200px;
+			margin-bottom: 10px;
+			border-radius: 50%;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			object-fit: cover;
+		}
+
+		.flower-list .flower-item a {
+			text-decoration: none;
+			color: aliceblue;
+			font-size: 32px;
+		}
+
+		.flower-list .flower-item a:hover {
+			text-decoration: underline;
+			text-decoration-color: white;
+		}
+
+		.flower-title-container {
+			position: relative;
+			margin-top: 100px;
+			margin-bottom: 20px;
+			height: 200px; /* 固定高度以显示背景图像 */
+			background-image: url(image/beautiful-hydrangea-flower-close-up.jpg);
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 10px; /* 圆角边框 */
+		}
+
+		.flower-title {
+			margin: 0;
+			padding: 0;
+			font-size: 70px;
+			color: white;
+			text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+		}
+	</style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="index.html" title="Home"><img src="image/BloomsWiki_logo_black.png" alt="logo" width="150"></a>
+			<div class="d-block d-sm-block d-lg-none" style="font-size:25px; font-color:black;">
+				<a href="index.html" title="Home"><i class="fa fa-home" style="color:black"></i></a>
+				<a href="section_flower.html" title="Flower"><i class="fa fa-sun-o" style="color:black"></i></a>
+				<a href="section_recommend_shops.html" title="Recommend"><i class="fa fa-list-alt" style="color:black"></i></a>
+				<a href="about.html" title="About Us"><i class="fa fa-info-circle" style="color:black"></i></a>
+				<a href="section_contact.html" title="Contact Us"><i class="fa fa-phone-square" style="color:black"></i></a>
+			</div>
+            <nav class="d-none d-sm-none d-lg-block">
+                <ul> 
+                    <li><a href="index.html" ><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="section_flower.html" title="Flower"><i class="fa fa-sun-o"></i> Flower</a></li>
+                    <li><a href="section_recommend_shops.html" title="Recommend"><i class="fa fa-list-alt"></i> Recommend</a></li>
+                    <li><a href="about.html" title="About Us"><i class="fa fa-info-circle"></i> About Us</a></li>
+                    <li><a href="section_contact.html" title="Contact Us"><i class="fa fa-phone-square"></i> Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+			<div class="container">
+				<div class="flower-title-container">
+					<h1 class="flower-title">Flower</h1>
+				</div>
+				   
+				<div class="search-bar">
+					<input type="text" id="searchInput" placeholder="Search...">
+				</div>
+				
+				<ul class="flower-list">
+					
+					<li class="flower-item">
+						<a href="section_flower_intro_hydrangeas.html">
+							<img src="image/white%20hydrangea.jpg" alt="Flower 5">
+							<span class="flower-name">Hydrangea</span>
+						</a>
+					</li>
+					<li class="flower-item">
+						<a href="section_flower_intro_comingsoon.html">
+							<img src="image/tulip.jpeg" alt="Flower 1">
+							<span class="flower-name">Tulip</span>
+						</a>
+					</li>
+					
+					<li class="flower-item">
+						<a href="section_flower_intro_comingsoon.html">
+							<img src="image/White%20Rose.jpg" alt="Flower 2">
+							<span class="flower-name">Rose</span>
+						</a>
+					</li>
+					
+					<li class="flower-item">
+						<a href="section_flower_intro_comingsoon.html">
+							<img src="image/sun%20flower.jpg" alt="Flower 3">
+							<span class="flower-name">Sunflower</span>
+						</a>
+					</li>
+					
+					<li class="flower-item">
+						<a href="section_flower_intro_comingsoon.html">
+							<img src="image/lily.JPG" alt="Flower 4">
+							<span class="flower-name">Lily</span>
+						</a>
+					</li>
+				   
+					<li class="flower-item">
+						<a href="section_flower_intro_comingsoon.html">
+							<img src="image/Cherry%20Blossom.jpg" alt="Flower 6">
+							<span class="flower-name">Cherry Blossom</span>
+						</a>
+					</li>
+					
+					<li class="flower-item">
+						<a href="section_flower_intro_comingsoon.html">
+							<img src="image/zinnia.jpg" alt="Flower 7">
+							<span class="flower-name">Zinnia</span>
+						</a>
+					</li>
+					
+					<li class="flower-item">
+						<a href="section_flower_intro_comingsoon.html">
+							<img src="image/Marigold.jpg" alt="Flower 8">
+							<span class="flower-name">Marigold</span>
+						</a>
+					</li>
+					
+					<li class="flower-item">
+						<a href="section_flower_intro_comingsoon.html">
+							<img src="image/Snapdragon.jpg" alt="Flower 9">
+							<span class="flower-name">Snapdragon</span>
+						</a>
+					</li>
+					
+					<li class="flower-item">
+						<a href="section_flower_intro_comingsoon.html">
+							<img src="image/Pansy.jpeg" alt="Flower 10">
+							<span class="flower-name">Pansy</span>
+						</a>
+					</li>
+					
+					<li class="flower-item">
+						<a href="section_flower_intro_comingsoon.html">
+							<img src="image/Jasmine.jpg" alt="Flower 11">
+							<span class="flower-name">Jasmine</span>
+						</a>
+					</li>
+					
+					<li class="flower-item">
+						<a href="section_flower_intro_comingsoon.html">
+							<img src="image/Chrysanthemum.jpg" alt="Flower 12">
+							<span class="flower-name">Chrysanthemum</span>
+						</a>
+					</li>
+					
+					<li class="flower-item">
+						<a href="section_flower_intro_comingsoon.html">
+							<img src="image/Poppy.jpg" alt="Flower 13">
+							<span class="flower-name">Poppy</span>
+						</a>
+					</li>
+					
+					<li class="flower-item">
+						<a href="section_flower_intro_comingsoon.html">
+							<img src="image/Lavender.jpg" alt="Flower 14">
+							<span class="flower-name">Lavender</span>
+						</a>
+					</li>
+					
+					<li class="flower-item">
+						<a href="section_flower_intro_comingsoon.html">
+							<img src="image/Gerbera.jpg" alt="Flower 15">
+							<span class="flower-name">Gerbera</span>
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+        <footer>
+            <p>&copy; 2024 BLOOMS WIKI</p>
+            <p>Contact us: 123-456-7890 | email@bloomwiki.com</p>
+            <p><a href="section_contact.html">Contact</a></p>
+        </footer>
+    </div>
+</body>
+</html>
